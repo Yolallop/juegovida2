@@ -2,7 +2,7 @@ compilar:limpiar
 	mkdir bin
 	find src -name *.java | xargs javac -cp bin -d bin	
 ejecutar:compilar
-	java -cp bin aplicacion.principal
+	java -cp bin dominio.principal
 limpiar:
 	rm -rf bin
 jar:compilar
